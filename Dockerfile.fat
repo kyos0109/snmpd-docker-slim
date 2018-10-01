@@ -1,0 +1,7 @@
+# new image
+bazel build ...
+COPY dir:1661f18b68febaaa609be3596145540bddf8faa3589623e1846c483c8046941b in /opt 
+ VOLUME [/var/net-snmp]
+ EXPOSE 161 161/udp
+ ENTRYPOINT ["/opt/sbin/snmpd" "-f" "-Loe" "-c" "/opt/etc/snmp/snmpd.conf"]
+# end of image: kyos0109/snmpd-distroless (id: sha256:1ddb579a7d2b6233108f179d3bcb8cfb9887020095697e258fc9ff1d37c5fde1 tags: latest)

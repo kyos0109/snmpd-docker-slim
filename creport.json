@@ -1,0 +1,303 @@
+{
+  "monitors": {
+    "fan": {
+      "monitor_pid": 1,
+      "monitor_ppid": 0,
+      "event_count": 14,
+      "main_process": {
+        "pid": 14,
+        "name": "snmpd",
+        "path": "/opt/sbin/snmpd",
+        "cmd": "/opt/sbin/snmpd -f -Loe -c /opt/etc/snmp/snmpd.conf",
+        "cwd": "/",
+        "root": "/",
+        "ppid": 1
+      },
+      "processes": {
+        "14": {
+          "pid": 14,
+          "name": "snmpd",
+          "path": "/opt/sbin/snmpd",
+          "cmd": "/opt/sbin/snmpd -f -Loe -c /opt/etc/snmp/snmpd.conf",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 1
+        }
+      },
+      "process_files": {
+        "14": {
+          "/lib/x86_64-linux-gnu/ld-2.24.so": {
+            "event_count": 1,
+            "first_eid": 2,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libc-2.24.so": {
+            "event_count": 2,
+            "first_eid": 13,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libdl-2.24.so": {
+            "event_count": 2,
+            "first_eid": 9,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libm-2.24.so": {
+            "event_count": 2,
+            "first_eid": 11,
+            "reads": 1
+          },
+          "/opt/lib/libnetsnmp.so.30.0.3": {
+            "event_count": 2,
+            "first_eid": 7,
+            "reads": 1
+          },
+          "/opt/lib/libnetsnmpagent.so.30.0.3": {
+            "event_count": 2,
+            "first_eid": 3,
+            "reads": 1
+          },
+          "/opt/lib/libnetsnmpmibs.so.30.0.3": {
+            "event_count": 2,
+            "first_eid": 5,
+            "reads": 1
+          },
+          "/opt/sbin/snmpd": {
+            "event_count": 1,
+            "first_eid": 1,
+            "reads": 1,
+            "execs": 1
+          }
+        }
+      }
+    },
+    "pt": {
+      "arch_name": "amd64",
+      "syscall_count": 12673,
+      "syscall_num": 12,
+      "syscall_stats": {
+        "0": {
+          "num": 0,
+          "name": "read",
+          "count": 6
+        },
+        "10": {
+          "num": 10,
+          "name": "mprotect",
+          "count": 14
+        },
+        "12": {
+          "num": 12,
+          "name": "brk",
+          "count": 1
+        },
+        "158": {
+          "num": 158,
+          "name": "arch_prctl",
+          "count": 1
+        },
+        "2": {
+          "num": 2,
+          "name": "open",
+          "count": 16
+        },
+        "21": {
+          "num": 21,
+          "name": "access",
+          "count": 2
+        },
+        "3": {
+          "num": 3,
+          "name": "close",
+          "count": 12601
+        },
+        "4": {
+          "num": 4,
+          "name": "stat",
+          "count": 6
+        },
+        "5": {
+          "num": 5,
+          "name": "fstat",
+          "count": 6
+        },
+        "59": {
+          "num": 59,
+          "name": "execve",
+          "count": 1
+        },
+        "9": {
+          "num": 9,
+          "name": "mmap",
+          "count": 18
+        },
+        "97": {
+          "num": 97,
+          "name": "getrlimit",
+          "count": 1
+        }
+      }
+    }
+  },
+  "image": {
+    "files": [
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/ld-2.24.so",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 153288,
+        "sha1_hash": "b11f17f814a38d498252cd3a186e1c9fd983c588"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "ld-2.24.so",
+        "file_size": 10
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libc-2.24.so",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1689360,
+        "sha1_hash": "07c653721a0131b9c8168142fe2738c8ac63c6fd"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libc.so.6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libc-2.24.so",
+        "file_size": 12
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libdl-2.24.so",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 14640,
+        "sha1_hash": "70fb8bfeb15fb25adb4bcfe3ff504cb14ba6378b"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libdl.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libdl-2.24.so",
+        "file_size": 13
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libm-2.24.so",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1063328,
+        "sha1_hash": "fc2eb4b6d5894bd775a93a84db360bf97f8c5492"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libm.so.6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libm-2.24.so",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib64/ld-linux-x86-64.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/lib/x86_64-linux-gnu/ld-2.24.so",
+        "file_size": 32
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/opt/lib/libnetsnmp.so",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libnetsnmp.so.30.0.3",
+        "file_size": 20
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/opt/lib/libnetsnmp.so.30",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libnetsnmp.so.30.0.3",
+        "file_size": 20
+      },
+      {
+        "file_type": "File",
+        "file_path": "/opt/lib/libnetsnmp.so.30.0.3",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 2508728,
+        "sha1_hash": "374c68321db86876b213f4b605b7b74179c33014"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/opt/lib/libnetsnmpagent.so",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libnetsnmpagent.so.30.0.3",
+        "file_size": 25
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/opt/lib/libnetsnmpagent.so.30",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libnetsnmpagent.so.30.0.3",
+        "file_size": 25
+      },
+      {
+        "file_type": "File",
+        "file_path": "/opt/lib/libnetsnmpagent.so.30.0.3",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1486432,
+        "sha1_hash": "a957fbb04139cd4b664c518c9141f41e53122765"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/opt/lib/libnetsnmpmibs.so",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libnetsnmpmibs.so.30.0.3",
+        "file_size": 24
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/opt/lib/libnetsnmpmibs.so.30",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libnetsnmpmibs.so.30.0.3",
+        "file_size": 24
+      },
+      {
+        "file_type": "File",
+        "file_path": "/opt/lib/libnetsnmpmibs.so.30.0.3",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 4651720,
+        "sha1_hash": "93349804bcd432538f310cfc490cae51d8fe0dfc"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/opt/sbin/snmpd",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true,
+          "X": true
+        },
+        "file_size": 65728,
+        "sha1_hash": "0b4b80728309ef60f594eb567261ece38abe6724"
+      }
+    ]
+  }
+}

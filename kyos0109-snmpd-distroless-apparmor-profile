@@ -1,0 +1,28 @@
+
+profile kyos0109-snmpd-distroless-apparmor-profile flags=(attach_disconnected,mediate_deleted) {
+
+  network,
+
+  /opt/sbin/snmpd rix,
+
+
+  /lib/x86_64-linux-gnu/ld-2.24.so r,
+  /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 r,
+  /lib/x86_64-linux-gnu/libc-2.24.so r,
+  /lib/x86_64-linux-gnu/libc.so.6 r,
+  /lib/x86_64-linux-gnu/libdl-2.24.so r,
+  /lib/x86_64-linux-gnu/libdl.so.2 r,
+  /lib/x86_64-linux-gnu/libm-2.24.so r,
+  /lib/x86_64-linux-gnu/libm.so.6 r,
+  /lib64/ld-linux-x86-64.so.2 r,
+  /opt/lib/libnetsnmp.so r,
+  /opt/lib/libnetsnmp.so.30 r,
+  /opt/lib/libnetsnmp.so.30.0.3 r,
+  /opt/lib/libnetsnmpagent.so r,
+  /opt/lib/libnetsnmpagent.so.30 r,
+  /opt/lib/libnetsnmpagent.so.30.0.3 r,
+  /opt/lib/libnetsnmpmibs.so r,
+  /opt/lib/libnetsnmpmibs.so.30 r,
+  /opt/lib/libnetsnmpmibs.so.30.0.3 r,
+
+}
